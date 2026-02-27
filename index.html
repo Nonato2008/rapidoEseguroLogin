@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,67 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 </head>
-<body>
-    
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- 
+    flex-column: Para listar verticalmente todos os itens do código
+    min-vh-100: Para o site cobrir 100% da tela verticalmente
+     -->
+
     <header>
-        <nav class="navbar navbar-expand-md mb-3">
-            <div class="container-fluid border-0 text-center col-12 col-md-6 ">
-
-                <h1 href="#" class="navbar-brand bg-dark text-light container-fluid fs-2  text ">Rápido & Seguro Logística 
-
-                    <img src="./rapido&seguroLogoFB.png" class="float-start mx-auto w-25" alt="">
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid  text-center col-10  col-md-6  ">
+                <!--
+                cabeçalho*
+                 container-fluid: para se adaptar a todos os tamanhos de tela
+                 text-center: texto no centro
+                 col-10 e col-md-6: adaptar o site para cobrir a tela inteira em diferentes tamanhos
+                  -->
+                <h1 href="#" class="navbar-brand text-warning container-fluid fs-2  text">Rápido & Seguro Logística 
+                    <!--
+                    Título*
+                     text-warning: texto em amarelo
+                     fs-2: tamanho do texto
+                    -->
+                    <img src="./rapido&seguroLogoFB.png" class="img-fluid d-block mx-auto w-25" alt="">
+                    <!-- imagem*Logo -->
                 </h1>
-
             </div>
+
+
         </nav>
     </header>
 
+    <main class="color text-light d-flex justify-content-center align-items-center container flex-fill d-fill">
+        <!-- Área de login*
+         Light: branco
+         justi-content-center e align-items-center: alinhar a tela no centro -->
+        <div class="row card border-primary p-4 text-light mb-10 container text-center col-md-6 " style="width: 100%; max-width: 400px;">
+                <h5 class="fs-1 mb-6 text-primary">LOGIN</h5>
+                <!-- Título* -->
+
+                <label class="mt-3 form-label text-primary">Email</label><br>
+                <input type="text" class="form-control  text-primary border-primary" id="email" placeholder="Digite seu email"><br>
+
+                <label class="mt-3 text-primary">Senha</label><br>
+                <input type="password" class="mb-3 form-control text-primary border-primary" id="password" placeholder="Digite sua Senha"><br>
+
+                <a href="#login" class="btn btn-primary mt-3 bg-primary border-primary">Cadastrar</a><br>
+
+                <a href="#forgotPw" class="mt-5">Esqueci minha Senha</a>
+            </div>
+    </main>
+
+    <footer class="mt-3 text-light pt-4 bg-warning  py-3">
+        <!-- Rodapé* -->
+        <div class="container">
+            <div class="text-center pt-3 text-muted ">
+                &copy; 2026 RÁPIDO & SEGURO. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+
 </body>
+
 </html>
